@@ -25,11 +25,13 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     private bool isTouchingGround;
 
+    private PlayerLightInventory _playerLightInventory;
 
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
-        coll = GetComponent<PolygonCollider2D>(); 
+        coll = GetComponent<PolygonCollider2D>();
+        _playerLightInventory = GetComponent<PlayerLightInventory>();
     }
 
     void Update()
@@ -39,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         direction = Input.GetAxisRaw("Horizontal");
 
         float jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * player.gravityScale));
-
+        
         //left right movement 
         if (direction > 0f)
         {
@@ -55,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //jumping movement 
-        if (Input.GetButtonDown("Jump") && isTouchingGround)
+        if ((Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && isTouchingGround)
         {
             player.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
