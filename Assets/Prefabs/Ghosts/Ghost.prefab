@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 826367379076291945}
   - component: {fileID: 826367379076291947}
   - component: {fileID: 826367379076291946}
+  - component: {fileID: 7905787610575877715}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Ghost
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2530273893994688061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.38, y: -1.35, z: 0}
+  m_LocalPosition: {x: 1, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  startPosition: {x: -2, y: 3, z: 0}
+  startPosition: {x: 0, y: 0, z: 0}
   endPosition: {x: 0, y: 0, z: 0}
 --- !u!50 &826367379076291946
 Rigidbody2D:
@@ -122,3 +123,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7905787610575877715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530273893994688061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec44795cac7f884a97ba6812413bdca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alwaysLit: 0

@@ -2,45 +2,47 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameState : MonoBehaviour
+public static class GameState
 {
-    public static GameState CurrentGameState;
+    public static int currentLevel = 0;
+    public static State currentState = State.MainMenu;
 
-    public int currentLevel = 0;
-    public State currentState = State.MainMenu;
-    
     public enum State
     {
         MainMenu,
         EscapeMenu,
-        InLevel,
-        InLevelSelect
+        Level,
+        LevelSelect
     }
 
-    private void Awake()
+    public static void LoadNextLevel()
     {
-        if (CurrentGameState == null)
+        if (currentLevel == 5)
         {
-            DontDestroyOnLoad(gameObject);
-            CurrentGameState = this;   
+            SceneManager.LoadScene("MainMenu");
         }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    
-    private void LoadNextLevel()
-    {
         LoadLevel(currentLevel + 1);
     }
     
-    private void LoadLevel(int level)
+    public static void LoadLevel(int level)
     {
+        SceneManager.LoadScene("Level" + level);
         currentLevel = level;
-        currentState = State.InLevel;
+        currentState = State.Level;
     }
-    
+
+    public static void LoadMenu()
+    {
+        currentLevel = 0;
+        currentState = State.MainMenu;
+    }
+
+    public static void LoadLevelSelect()
+    {
+        currentLevel = 0;
+        currentState = State.LevelSelect;
+    }
+
 }

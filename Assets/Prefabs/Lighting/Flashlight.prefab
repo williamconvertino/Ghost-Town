@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2409291149208395407}
   - component: {fileID: 2409291149208395409}
   - component: {fileID: 2409291149208395406}
+  - component: {fileID: 922243987617041666}
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -104,6 +105,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
+--- !u!114 &922243987617041666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409291149208395408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78752dcd30eb9a645be87731e3e9cf60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightOn: 0
+  offset: {x: 1, y: -1}
 --- !u!1 &2409291149814811543
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +131,7 @@ GameObject:
   - component: {fileID: 2409291149814811541}
   - component: {fileID: 2409291149814811538}
   m_Layer: 0
-  m_Name: Light
+  m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,8 +145,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2409291149814811543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.59, y: 0.14, z: 0}
-  m_LocalScale: {x: 1.9462501, y: 2.025, z: 1}
+  m_LocalPosition: {x: 2.06, y: 0.07, z: 0}
+  m_LocalScale: {x: 1.6014795, y: 1.2581679, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2409291149208395407}
@@ -238,5 +253,5 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0

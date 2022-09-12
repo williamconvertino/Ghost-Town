@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelNavigation : MonoBehaviour
 {
-    public string scene;
+    public int level;
 
     private Button button;
     // Start is called before the first frame update
@@ -18,6 +18,6 @@ public class LevelNavigation : MonoBehaviour
 
     void SelectLevel()
     {
-        SceneManager.LoadScene(scene);
+        GameState.LoadLevel(level);
     }
 }
