@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Ghost
+  - LightHolder
   layers:
   - Default
   - TransparentFX
