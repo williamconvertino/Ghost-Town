@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3752906577509257130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2364973774446720548, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364973774446720548, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364973774446720548, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 85d4c1ab2c6b8ff4a8955b345bdc28b4, type: 3}
+    - target: {fileID: 2364973774446720548, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.0064745
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505904, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505906, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.96880245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505906, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00970602
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505906, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505906, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505906, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505906, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086738128313505907, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: lightPrefab
+      value: 
+      objectReference: {fileID: 232109136739285728, guid: 223ad7d77b5cb5b43af53842ad5c2e34, type: 3}
+    - target: {fileID: 3086738128313505917, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
+      propertyPath: m_Name
+      value: LanternHolder
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aaa318a21cea5ad48ae7af7aca1516b6, type: 3}
