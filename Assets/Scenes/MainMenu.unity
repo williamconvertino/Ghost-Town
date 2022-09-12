@@ -465,6 +465,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1601618524}
     m_Modifications:
     - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
       propertyPath: scene
       value: Level1
       objectReference: {fileID: 0}
@@ -707,6 +711,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1601618524}
     m_Modifications:
+    - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
+      propertyPath: level
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
       propertyPath: scene
       value: Level4
@@ -1008,6 +1016,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1601618524}
     m_Modifications:
     - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
+      propertyPath: level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
       propertyPath: scene
       value: Level3
       objectReference: {fileID: 0}
@@ -1117,6 +1129,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1601618524}
     m_Modifications:
+    - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
+      propertyPath: level
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
       propertyPath: scene
       value: Level5
@@ -1379,6 +1395,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1601618524}
     m_Modifications:
+    - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
+      propertyPath: level
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -8111425448444087230, guid: 8264c7374dc464d43a96f294080afc4d, type: 3}
       propertyPath: scene
       value: Level2

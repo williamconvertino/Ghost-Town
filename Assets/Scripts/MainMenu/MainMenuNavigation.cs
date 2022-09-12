@@ -15,6 +15,6 @@ public class MainMenuNavigation : MonoBehaviour
 
     void StartGame()
     {
-        SceneManager.LoadScene("Alex");
+        GameState.LoadLevel(1);
     }
 }
