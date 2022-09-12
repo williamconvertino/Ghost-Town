@@ -24,10 +24,10 @@ public class ObjectLighting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (alwaysLit)
-        // {
-        //     _lightSpriteRenderer.maskInteraction = SpriteMaskInteraction.None;
-        //     _darkSpriteRenderer.enabled = false;
-        // }
+        if (alwaysLit)
+        {
+            _lightSpriteRenderer.maskInteraction = SpriteMaskInteraction.None;
+            _darkSpriteRenderer.enabled = false;
+        }
     }
 }
