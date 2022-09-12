@@ -15,7 +15,6 @@ public class MainMenuNavigation : MonoBehaviour
 
     void StartGame()
     {
-        Debug.Log("button clicked!!!");
         SceneManager.LoadScene("Alex");
     }
 }
