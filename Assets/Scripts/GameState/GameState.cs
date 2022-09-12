@@ -21,6 +21,7 @@ public static class GameState
     {
         if (currentLevel == 5)
         {
+            currentLevel = 0;
             SceneManager.LoadScene("MainMenu");
         }
         LoadLevel(currentLevel + 1);
@@ -35,14 +36,21 @@ public static class GameState
 
     public static void LoadMenu()
     {
+        SceneManager.LoadScene("MainMenu");
         currentLevel = 0;
         currentState = State.MainMenu;
     }
 
     public static void LoadLevelSelect()
     {
+        SceneManager.LoadScene("LevelSelect");
         currentLevel = 0;
         currentState = State.LevelSelect;
+    }
+
+    public static void LoadCurrentLevel()
+    {
+        SceneManager.LoadScene("Level" + currentLevel);
     }
 
 }

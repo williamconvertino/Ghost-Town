@@ -5,16 +5,36 @@ using UnityEngine;
 
 public class PlayerLightInventory : MonoBehaviour
 {
+    public bool isFlipped = false;
 
-    public GameObject currentLight;
+    public GameObject defaultLight;
+    
+    private GameObject _currentLight;
 
     private GameObject _activeLightHolder;
+
+    private void Start()
+    {
+        if (defaultLight != null)
+        {
+            SetLight(defaultLight);
+        }
+    }
+
     private void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && currentLight != null)
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && _currentLight != null)
         {
             GetComponentInChildren<LightObject>().ToggleLight();
         }
+
+        // if (currentLight != null)
+        // {
+        //     Vector3 scale = currentLight.transform.localScale;
+        //     currentLight.transform.localScale = new Vector3(scale.x * (isFlipped ? -1: 1), scale.y, scale.z);
+        //     Vector3 position = currentLight.GetComponent<LightObject>().offset;
+        //     currentLight.transform.localPosition = new Vector3(position.x * (isFlipped ? -1: 1), position.y, position.z);
+        // }
 
         if (_activeLightHolder != null && Input.GetKeyDown(KeyCode.E))
         {
@@ -26,12 +46,12 @@ public class PlayerLightInventory : MonoBehaviour
 
     void SetLight(GameObject light)
     {
-        if (currentLight != null)
+        if (_currentLight != null)
         {
-            Destroy(currentLight);
+            Destroy(_currentLight);
         }
-        currentLight = Instantiate(light, transform.position, Quaternion.identity, transform);
-        currentLight.transform.localPosition = currentLight.GetComponent<LightObject>().offset;
+        _currentLight = Instantiate(light, transform.position, Quaternion.identity, transform);
+        _currentLight.transform.localPosition = _currentLight.GetComponent<LightObject>().offset;
     }
     
     private void OnTriggerEnter2D(Collider2D col)
