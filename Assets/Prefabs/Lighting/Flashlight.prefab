@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 2409291149814811541}
   - component: {fileID: 2409291149814811538}
   m_Layer: 0
-  m_Name: Sprite Mask
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
