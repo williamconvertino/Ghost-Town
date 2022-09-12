@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class PlayerMovement : MonoBehaviour
 {
     //horizontal speed of character
     public float speed = 5f;
-
-    //public float jumpSpeed = 8f;
     private float direction = 0f;
 
     //height of jump 
@@ -20,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public float fallingGravityScale = 45;
 
     private Rigidbody2D player;
+    private PolygonCollider2D coll; 
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask groundLayer;
@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
+        coll = GetComponent<PolygonCollider2D>(); 
     }
 
     void Update()
@@ -69,4 +70,14 @@ public class PlayerMovement : MonoBehaviour
             player.gravityScale = fallingGravityScale; 
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ghost"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        }
+    }
+
+    //if collide, then we should restart the scene 
 }
