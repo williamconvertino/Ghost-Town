@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private MotionAnimation _animator;
     //horizontal speed of character
     public float speed = 5f;
     private float direction = 0f;
@@ -25,13 +26,11 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     private bool isTouchingGround;
 
-    private PlayerLightInventory _playerLightInventory;
-
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
         coll = GetComponent<PolygonCollider2D>();
-        _playerLightInventory = GetComponent<PlayerLightInventory>();
+        _animator = GetComponent<MotionAnimation>();
     }
 
     void Update()
@@ -71,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
         {
             player.gravityScale = fallingGravityScale; 
         }
+        
+        _animator.UpdateAnimator(direction, player.velocity);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
