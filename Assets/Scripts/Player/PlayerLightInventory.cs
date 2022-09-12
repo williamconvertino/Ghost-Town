@@ -5,15 +5,28 @@ using UnityEngine;
 
 public class PlayerLightInventory : MonoBehaviour
 {
-
+    public bool isFlipped = false;
     public GameObject currentLight;
 
     private GameObject _activeLightHolder;
+
+    private void Start()
+    {
+    }
+
     private void Update()
     {
         if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && currentLight != null)
         {
             GetComponentInChildren<LightObject>().ToggleLight();
+        }
+
+        if (currentLight != null)
+        {
+            Vector3 scale = currentLight.transform.localScale;
+            currentLight.transform.localScale = new Vector3(scale.x * (isFlipped ? -1: 1), scale.y, scale.z);
+            Vector3 position = currentLight.GetComponent<LightObject>().offset;
+            currentLight.transform.localPosition = new Vector3(position.x * (isFlipped ? -1: 1), position.y, position.z);
         }
 
         if (_activeLightHolder != null && Input.GetKeyDown(KeyCode.E))

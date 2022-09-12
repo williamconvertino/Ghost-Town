@@ -18,7 +18,7 @@ public class MotionAnimation : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void UpdateAnimator(float direction, Vector2 velocity)
+    public bool UpdateAnimator(float direction, Vector2 velocity)
     {
         if (direction > 0)
         {
@@ -39,6 +39,8 @@ public class MotionAnimation : MonoBehaviour
         {
             _animator.Play("Idle");
         }
+
+        return _isFlipped;
     }
 
 }

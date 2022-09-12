@@ -25,12 +25,14 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask groundLayer;
     private bool isTouchingGround;
+    private PlayerLightInventory _lightInventory;
 
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
         coll = GetComponent<PolygonCollider2D>();
         _animator = GetComponent<MotionAnimation>();
+        _lightInventory = GetComponent<PlayerLightInventory>();
     }
 
     void Update()
@@ -70,8 +72,16 @@ public class PlayerMovement : MonoBehaviour
         {
             player.gravityScale = fallingGravityScale; 
         }
+
+        if (_animator.UpdateAnimator(direction, player.velocity))
+        {
+            _lightInventory.isFlipped = true;
+        }
+        else
+        {
+            _lightInventory.isFlipped = false;
+        }
         
-        _animator.UpdateAnimator(direction, player.velocity);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
