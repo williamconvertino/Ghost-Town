@@ -103,10 +103,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bc87ddba1ef48869be4dc008c36033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpHeight: 5
-  gravityScale: 10
-  fallingGravityScale: 45
+  speed: 6
+  jumpHeight: 3
+  gravityScale: 7
+  fallingGravityScale: 6
   groundCheck: {fileID: 6327553538524852237}
   groundCheckRadius: 0.2
   groundLayer:
@@ -145,7 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2332ac194962ade4cbc931b7e565dffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLight: {fileID: 0}
+  isFlipped: 0
+  defaultLight: {fileID: 0}
 --- !u!61 &6908753948403123402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b560663481e8de439b241e15d872e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleVelocityCutoff: 0
 --- !u!1 &6558326377979429642
 GameObject:
   m_ObjectHideFlags: 0
