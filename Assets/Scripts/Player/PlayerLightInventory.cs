@@ -7,25 +7,46 @@ public class PlayerLightInventory : MonoBehaviour
 {
 
     public GameObject currentLight;
+
+    private GameObject _activeLightHolder;
     private void Update()
     {
         if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && currentLight != null)
         {
             GetComponentInChildren<LightObject>().ToggleLight();
         }
+
+        if (_activeLightHolder != null && Input.GetKeyDown(KeyCode.E))
+        {
+            SetLight(_activeLightHolder.GetComponent<LightHolder>().lightPrefab);
+            Destroy(_activeLightHolder);
+            _activeLightHolder = null;
+        }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    void SetLight(GameObject light)
     {
-        if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("LightHolder"))
+        if (currentLight != null)
         {
-            LightHolder lightHolderObject = other.GetComponent<LightHolder>();
-            
             Destroy(currentLight);
-            
-            currentLight = lightHolderObject.Pickup();
-            currentLight.transform.parent = transform;
-            currentLight.transform.localPosition = currentLight.GetComponentInChildren<LightObject>().offset;
+        }
+        currentLight = Instantiate(light, transform.position, Quaternion.identity, transform);
+        currentLight.transform.localPosition = currentLight.GetComponent<LightObject>().offset;
+    }
+    
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("LightHolder"))
+        {
+            _activeLightHolder = col.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject == _activeLightHolder)
+        {
+            _activeLightHolder = null;
         }
     }
 }
