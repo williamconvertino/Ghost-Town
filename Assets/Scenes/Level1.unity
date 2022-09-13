@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 209774643325721125, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: dialogueObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c8a9dc8db4b2ae47a3e609790cb7059, type: 2}
     - target: {fileID: 5140803854200250291, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
       propertyPath: m_Name
       value: TextColliderGameFinish
@@ -1424,6 +1428,10 @@ PrefabInstance:
       propertyPath: LevelLight
       value: 
       objectReference: {fileID: 1516713527}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 2072956594}
     - target: {fileID: 1513485476694235512, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: m_RootOrder
       value: 0
