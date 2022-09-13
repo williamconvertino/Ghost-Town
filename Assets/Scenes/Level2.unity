@@ -280,6 +280,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1388256318}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: lightbulb
+      value: 
+      objectReference: {fileID: 183760919}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LevelLight
+      value: 
+      objectReference: {fileID: 1045219513}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -357,6 +365,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1388256318}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: lightbulb
+      value: 
+      objectReference: {fileID: 183760919}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LevelLight
+      value: 
+      objectReference: {fileID: 1045219513}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 9.35
       objectReference: {fileID: 0}
@@ -422,6 +438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+--- !u!1 &183760919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4222027615619877687, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
+  m_PrefabInstance: {fileID: 1388256314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &198974947
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +622,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1388256318}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: lightbulb
+      value: 
+      objectReference: {fileID: 183760919}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LevelLight
+      value: 
+      objectReference: {fileID: 1045219513}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 0
@@ -1339,6 +1368,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1045219513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4222027614480314602, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
+  m_PrefabInstance: {fileID: 1388256314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1115987488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1588,6 +1622,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1388256318}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: lightbulb
+      value: 
+      objectReference: {fileID: 183760919}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LevelLight
+      value: 
+      objectReference: {fileID: 1045219513}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 10.65
       objectReference: {fileID: 0}
@@ -1747,6 +1789,10 @@ PrefabInstance:
     - target: {fileID: 4222027614480314602, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222027614480314604, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
+      propertyPath: levelNotCleared
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4222027615234673560, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
       propertyPath: m_SortingLayer
