@@ -19,6 +19,7 @@ public class TextPopup: MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             dialogueUI.IsOpen = true;
+            Debug.Log("It is now open"); 
 
             //dialogueUI.ShowDialogue(dialogueObject); 
         }
@@ -29,7 +30,8 @@ public class TextPopup: MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            dialogueUI.IsOpen = false; 
+            dialogueUI.IsOpen = false;
+            Debug.Log("It is now closed");
         }
     }
 }

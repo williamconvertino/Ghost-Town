@@ -57,3 +57,6 @@ TagManager:
   - name: Players_and_Colliders
     uniqueID: 1860210449
     locked: 0
+  - name: Canvas
+    uniqueID: 1493495519
+    locked: 0

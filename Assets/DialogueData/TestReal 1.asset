@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: TestReal 1
   m_EditorClassIdentifier: 
   dialogue:
-  - "Help me it will work \nHello"
-  - 'Goodbye
+  - 'Testing! This is a test dialogue
 
-    Grace'
+    Help'
