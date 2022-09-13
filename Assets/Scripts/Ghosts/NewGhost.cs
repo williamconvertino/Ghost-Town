@@ -6,6 +6,7 @@ namespace Ghosts
     public class NewGhost: MonoBehaviour
     {
 
+        private bool flipped = false;
         public Vector3 finalPos;
         private Vector3 _startPos;
         private Vector3 direction;
@@ -20,15 +21,25 @@ namespace Ghosts
 
         private void Update()
         {
-            if (Vector3.Distance(transform.position, _startPos) > Vector3.Distance(finalPos, _startPos))
+            if (transform.position.x > finalPos.x)
             {
-                transform.position += direction * speed;
+                flipped = false;
             }
 
-            if (Vector3.Distance(transform.position, finalPos) > Vector3.Distance(finalPos, _startPos))
+            if (transform.position.x < _startPos.x)
             {
-                transform.position -= direction * speed;
+                flipped = true;
             }
+
+            if (!flipped)
+            {
+                transform.position -= direction * speed * Time.deltaTime;
+            }
+            else
+            {
+                transform.position += direction * speed * Time.deltaTime;
+            }
+            
         }
     }
 }
