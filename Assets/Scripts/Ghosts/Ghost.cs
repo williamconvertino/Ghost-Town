@@ -72,8 +72,7 @@ public class Ghost : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerMovement player = collision.gameObject.GetComponent<PlayerMovement>();
-        if (player != null)
+        if (collision.CompareTag("Player") && player.GetComponent<levelLighting>().levelNotCleared)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
