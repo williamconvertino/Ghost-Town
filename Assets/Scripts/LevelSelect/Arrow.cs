@@ -5,17 +5,20 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int selectedLevel = 1;
+    private int selectedLevel;
+    private int highestLevel;
 
     void Start()
     {
         transform.position = new Vector3(-7, 0.5f, 0);
+        selectedLevel = 1;
+        highestLevel = GameState.highestLevel;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) && selectedLevel < 5)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && selectedLevel < highestLevel)
         {
             selectedLevel++;
             transform.position =
