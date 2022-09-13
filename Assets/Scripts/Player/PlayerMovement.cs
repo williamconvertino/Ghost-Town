@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+   
     private MotionAnimation _animator;
+
     //horizontal speed of character
     public float speed = 5f;
     private float direction = 0f;
@@ -27,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
     private bool isTouchingGround;
     private PlayerLightInventory _lightInventory;
 
+    //[SerializeField] DialogueUI dialogueUI; 
+
+    //dialogue manager
+    
+
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
@@ -37,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
+        
         isTouchingGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         direction = Input.GetAxisRaw("Horizontal");
 
@@ -81,16 +88,31 @@ public class PlayerMovement : MonoBehaviour
         {
             _lightInventory.isFlipped = false;
         }
-        
+
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    if (Interactable != null)
+        //    {
+        //        Interactable.Interact(this);
+        //    }
+        //}
+
     }
 
+    //have the game restart if it is a polygon collider
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //if (collision.GetComponent<Collider>().GetType() == typeof(PolygonCollider2D))
+        //{
+        //    if (collision.gameObject.CompareTag("Ghost"))
+        //    {
+        //        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //    }
+        //}
+
         if (collision.gameObject.CompareTag("Ghost"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
-
-    //if collide, then we should restart the scene 
 }
