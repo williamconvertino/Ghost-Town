@@ -9,10 +9,10 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private GameObject dialogueBox;
 
     //object for if it is not finished 
-    [SerializeField] private DialogueObject dialogueObjectLevelNotFinished;
+    //[SerializeField] private DialogueObject dialogueObjectLevelNotFinished;
 
-    //dialogue for if the game is finished 
-    [SerializeField] private DialogueObject dialogueObjectLevelFinished;
+    ////dialogue for if the game is finished 
+    //[SerializeField] private DialogueObject dialogueObjectLevelFinished;
 
     [SerializeField] private DialogueObject dialogueObject; 
 
@@ -40,7 +40,7 @@ public class DialogueUI : MonoBehaviour
         if (IsOpen)
         {
             dialogueBox.SetActive(true);
-            StartCoroutine(StepThroughDialogue(dialogueObjectLevelNotFinished));
+            StartCoroutine(StepThroughDialogue(dialogueObject));
 
         }
 
