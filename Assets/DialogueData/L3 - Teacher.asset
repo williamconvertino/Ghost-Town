@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ae6fffb92050447099ce98a9443dcbf, type: 3}
-  m_Name: L3-Door1
+  m_Name: L3 - Teacher
   m_EditorClassIdentifier: 
   dialogue:
-  - "Oh... I haven't seen Mr. Convertino since high school. \nHis house was always
-    so grand"
+  - It's Mr. Convertino. I wonder what happened?
