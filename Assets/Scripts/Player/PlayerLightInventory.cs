@@ -28,13 +28,13 @@ public class PlayerLightInventory : MonoBehaviour
             GetComponentInChildren<LightObject>().ToggleLight();
         }
 
-        // if (currentLight != null)
-        // {
-        //     Vector3 scale = currentLight.transform.localScale;
-        //     currentLight.transform.localScale = new Vector3(scale.x * (isFlipped ? -1: 1), scale.y, scale.z);
-        //     Vector3 position = currentLight.GetComponent<LightObject>().offset;
-        //     currentLight.transform.localPosition = new Vector3(position.x * (isFlipped ? -1: 1), position.y, position.z);
-        // }
+        if (_currentLight != null)
+        {
+            Vector3 scale = _currentLight.transform.localScale;
+            _currentLight.transform.localScale = new Vector3(isFlipped ? -1: 1, scale.y, scale.z);
+            Vector3 position = _currentLight.GetComponent<LightObject>().offset;
+            _currentLight.transform.localPosition = new Vector3(Mathf.Abs(position.x) * (isFlipped ? -1: 1), position.y, position.z);
+        }
 
         if (_activeLightHolder != null && Input.GetKeyDown(KeyCode.E))
         {
