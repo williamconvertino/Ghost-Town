@@ -13,8 +13,11 @@ public class PlayerLightInventory : MonoBehaviour
 
     private GameObject _activeLightHolder;
 
+    private lightSwitch _lightSwitch;
+
     private void Start()
     {
+        _lightSwitch = GetComponent<lightSwitch>();
         if (defaultLight != null)
         {
             SetLight(defaultLight);
@@ -23,11 +26,6 @@ public class PlayerLightInventory : MonoBehaviour
 
     private void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && _currentLight != null)
-        {
-            GetComponentInChildren<LightObject>().ToggleLight();
-        }
-
         if (_currentLight != null)
         {
             Vector3 scale = _currentLight.transform.localScale;
@@ -35,6 +33,16 @@ public class PlayerLightInventory : MonoBehaviour
             Vector3 position = _currentLight.GetComponent<LightObject>().offset;
             _currentLight.transform.localPosition = new Vector3(Mathf.Abs(position.x) * (isFlipped ? -1: 1), position.y, position.z);
         }
+        if (_lightSwitch.levelWon)
+        {
+            GetComponentInChildren<LightObject>().lightOn = false;
+            return;
+        }
+        if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && _currentLight != null)
+        {
+            GetComponentInChildren<LightObject>().ToggleLight();
+        }
+
 
         if (_activeLightHolder != null && Input.GetKeyDown(KeyCode.E))
         {
