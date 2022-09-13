@@ -8,6 +8,8 @@ TagManager:
   - Ghost
   - LightHolder
   - lightBulb
+  - Key
+  - KeyObstacle
   layers:
   - Default
   - TransparentFX
