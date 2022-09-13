@@ -9,6 +9,7 @@ public static class GameState
     public static int currentLevel = 0;
     public static State currentState = State.MainMenu;
     public static int highestLevel = 1;
+    public static bool audioStarted = false;
 
     public enum State
     {
@@ -16,6 +17,19 @@ public static class GameState
         EscapeMenu,
         Level,
         LevelSelect
+    }
+
+    public static void StartAudio(AudioClip audioClip)
+    {
+        if (audioStarted)
+        {
+            return;
+        }
+        audioStarted = true;
+        AudioSource audioSource = new AudioSource();
+        audioSource.clip = audioClip;
+        audioSource.loop = true;
+        audioSource.Play();
     }
 
     public static void LoadNextLevel()
