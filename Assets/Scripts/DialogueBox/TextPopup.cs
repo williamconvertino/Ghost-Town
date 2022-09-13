@@ -10,7 +10,9 @@ public class TextPopup: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogueUI.IsOpen = false; 
+        dialogueUI.IsOpen = false;
+        //dialogueUI.levelNotCleared = GetComponent<levelLighting>().levelNotCleared;
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +20,7 @@ public class TextPopup: MonoBehaviour
        
         if (collision.gameObject.CompareTag("Player"))
         {
+            //dialogueUI.levelNotCleared = GetComponent<levelLighting>().levelNotCleared;
             dialogueUI.IsOpen = true;
             Debug.Log("It is now open"); 
 
@@ -30,6 +33,7 @@ public class TextPopup: MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            //dialogueUI.levelNotCleared = GetComponent<levelLighting>().levelNotCleared;
             dialogueUI.IsOpen = false;
             Debug.Log("It is now closed");
         }
