@@ -211,6 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightOn: 0
   offset: {x: 1, y: -0.7}
+  audioClip: {fileID: 8300000, guid: 6b90681b9fe0c4c689084d006f0c74fa, type: 3}
 --- !u!1 &6528085593083524081
 GameObject:
   m_ObjectHideFlags: 0
