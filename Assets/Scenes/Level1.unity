@@ -1424,6 +1424,10 @@ PrefabInstance:
       propertyPath: LevelLight
       value: 
       objectReference: {fileID: 1516713527}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 2072956594}
     - target: {fileID: 1513485476694235512, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: m_RootOrder
       value: 0

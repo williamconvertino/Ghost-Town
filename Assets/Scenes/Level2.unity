@@ -288,6 +288,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045219513}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 1388256318}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -640,6 +644,10 @@ PrefabInstance:
       propertyPath: LevelLight
       value: 
       objectReference: {fileID: 1045219513}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 1388256318}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 0
@@ -1057,6 +1065,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045219513}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 1388256318}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1263,6 +1275,10 @@ PrefabInstance:
       propertyPath: LevelLight
       value: 
       objectReference: {fileID: 1045219513}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 1388256318}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 9.9
@@ -2672,6 +2688,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045219513}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 1388256318}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 11.72
       objectReference: {fileID: 0}
@@ -3335,6 +3355,10 @@ PrefabInstance:
       propertyPath: LevelLight
       value: 
       objectReference: {fileID: 1045219513}
+    - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: LightSwitch
+      value: 
+      objectReference: {fileID: 1388256318}
     - target: {fileID: 826367379076291947, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
       propertyPath: endPosition.x
       value: 0
@@ -16149,7 +16173,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4222027614480314604, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
 --- !u!4 &1388256315 stripped
 Transform:
