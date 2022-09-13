@@ -1472,6 +1472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 7905787610575877715, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
+      propertyPath: alwaysLit
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 318ab1feb3e6d4b17a16203e53516ddc, type: 3}
 --- !u!1 &1230643667
@@ -2152,7 +2156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222027614480314602, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4222027614480314603, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
       propertyPath: m_TagString
