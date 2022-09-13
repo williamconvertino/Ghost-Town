@@ -20,6 +20,7 @@ public static class GameState
 
     public static void LoadNextLevel()
     {
+        CompletedLevel(currentLevel);
         if (currentLevel == 5)
         {
             currentLevel = 0;
@@ -56,7 +57,7 @@ public static class GameState
 
     public static void CompletedLevel(int level)
     {
-        highestLevel = Math.Max(level, highestLevel);
+        highestLevel = Math.Max(level + 1, highestLevel);
     }
 
 }
