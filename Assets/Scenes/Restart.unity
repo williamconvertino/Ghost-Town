@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EEEEEEK!
+  m_text: boo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 43fb63ec6834742da9e6b3f273516fc2, type: 2}
   m_sharedMaterial: {fileID: 5816916377013251946, guid: 43fb63ec6834742da9e6b3f273516fc2, type: 2}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Restart Level
+  m_text: '> Restart  Level
 
 '
   m_isRightToLeft: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Level Select
+  m_text: '> Level Select
 
 '
   m_isRightToLeft: 0
