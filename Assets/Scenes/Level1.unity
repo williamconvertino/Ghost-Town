@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 209774643325721125, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: dialogueObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c8a9dc8db4b2ae47a3e609790cb7059, type: 2}
     - target: {fileID: 5140803854200250291, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
       propertyPath: m_Name
       value: TextColliderGameFinish
