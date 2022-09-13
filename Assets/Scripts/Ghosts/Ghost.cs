@@ -16,7 +16,7 @@ public class Ghost : MonoBehaviour
     private Rigidbody2D myRigidbody2D;
     private SpriteRenderer mySpriteRenderer;
 
-    public GameObject LevelLight;
+    public GameObject LightSwitch;
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +74,7 @@ public class Ghost : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && LevelLight.GetComponent<levelLighting>().levelNotCleared)
+        if (collision.CompareTag("Player") && !LightSwitch.GetComponent<lightSwitch>().levelWon)
         {
             GameState.LoadRestart();
         }
