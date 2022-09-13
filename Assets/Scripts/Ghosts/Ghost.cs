@@ -19,10 +19,21 @@ public class Ghost : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (startPosition.magnitude == 0)
+        {
+            startPosition = transform.position;
+        }
+
+        if (endPosition.magnitude == 0)
+        {
+            endPosition = transform.position;
+        }
+
         transform.position = startPosition;
         startToEnd = endPosition - startPosition;
         endToStart = startPosition - endPosition;
         movement = startToEnd;
+
         myRigidbody2D = GetComponent<Rigidbody2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
