@@ -17,7 +17,7 @@ public class MultiObjectLighting : MonoBehaviour
         List<GameObject> children = new List<GameObject>();
         foreach (Transform child in transform)
         {
-            if (child != null && child.gameObject != null)
+            if (child != null && child.gameObject != null && child.gameObject.GetComponent<SpriteRenderer>()    != null )
             {
                 children.Add(child.gameObject);
             }
