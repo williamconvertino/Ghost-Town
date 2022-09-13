@@ -2441,7 +2441,7 @@ PrefabInstance:
       objectReference: {fileID: 2409291149208395408, guid: 133fd65e380b02b418709c2d417f41b2, type: 3}
     - target: {fileID: 4222027614480314602, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4222027614480314604, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
       propertyPath: levelNotCleared
