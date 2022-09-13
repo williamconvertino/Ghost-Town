@@ -55,6 +55,11 @@ public static class GameState
         SceneManager.LoadScene("Level" + currentLevel);
     }
 
+    public static void LoadRestart()
+    {
+        SceneManager.LoadScene("Restart");
+    }
+
     public static void CompletedLevel(int level)
     {
         highestLevel = Math.Max(level + 1, highestLevel);

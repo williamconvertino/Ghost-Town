@@ -23,7 +23,7 @@ public class RestartNavigation : MonoBehaviour
 
     void ReturnToMenu()
     {
-        GameState.LoadMenu();
+        GameState.LoadLevelSelect();
     }
 
 }
