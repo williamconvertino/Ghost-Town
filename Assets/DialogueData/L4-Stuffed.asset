@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae6fffb92050447099ce98a9443dcbf, type: 3}
   m_Name: L4-Stuffed
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - Hey stuffy

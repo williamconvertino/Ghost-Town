@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: L4-Dad
   m_EditorClassIdentifier: 
   dialogue:
-  - We love you, Will. It feels just like yesterday.
+  - 'We love you, Will. It feels just like yesterday.
+
+    Don''t worry...'
