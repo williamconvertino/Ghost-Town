@@ -685,6 +685,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4222027615991574058, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
   m_PrefabInstance: {fileID: 4222027616534920793}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &551416366
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 209774643325721125, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: dialogueObject
+      value: 
+      objectReference: {fileID: 11400000, guid: f676673bfad7d8143aac17e1dde4ca4a, type: 2}
+    - target: {fileID: 5140803854200250291, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_Name
+      value: TextColliderLightbulb (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.430305
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391008337890147660, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bba3a165a83b54d75ac022248bc582e5, type: 3}
 --- !u!4 &566731694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4222027615985491447, guid: 822f592170ce1034facd296058ca2c9e, type: 3}
