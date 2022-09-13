@@ -30,7 +30,6 @@ public class PlayerLightInventory : MonoBehaviour
 
         if (_currentLight != null)
         {
-            print(isFlipped);
             Vector3 scale = _currentLight.transform.localScale;
             _currentLight.transform.localScale = new Vector3(isFlipped ? -1: 1, scale.y, scale.z);
             Vector3 position = _currentLight.GetComponent<LightObject>().offset;
