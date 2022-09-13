@@ -76,7 +76,7 @@ public class Ghost : MonoBehaviour
     {
         if (collision.CompareTag("Player") && LevelLight.GetComponent<levelLighting>().levelNotCleared)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameState.LoadRestart();
         }
     }
 }
