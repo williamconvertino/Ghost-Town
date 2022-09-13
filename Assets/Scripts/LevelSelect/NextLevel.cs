@@ -10,7 +10,8 @@ public class NextLevel : MonoBehaviour
         PlayerMovement player = collision.gameObject.GetComponent<PlayerMovement>();
         if (player != null)
         {
-            GameState.LoadNextLevel();
+            GameState.CompletedLevel(GameState.currentLevel);
+            GameState.LoadLevelSelect();
         }
     }
 }
